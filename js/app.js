@@ -1,12 +1,15 @@
 
 function init(){
-	document.getElementById("sidebar").style.transform = "translate(-400%, 0%)";
+	const sidebar = document.getElementById("sidebar");
+	sidebar.style.display = "none";
+	sidebar.style.transform = "translate(-400%, 0%)";
 	setLanguage();
 }
 
 function showSidebar(show){
 	if(show){
-		var sidebar = document.getElementById("sidebar");
+		const sidebar = document.getElementById("sidebar");
+		sidebar.style.display = "block";
 		sidebar.style.animation = "slide-left 0.5s ease";
 		sidebar.style.transform = "translate(0%, 0%)";
 		document.getElementById("sidebar-open").style.display = "none";
@@ -15,6 +18,7 @@ function showSidebar(show){
 		const sidebar = document.getElementById("sidebar");
 		sidebar.style.animation = "slide-right 0.5s ease";
 		sidebar.style.transform = "translate(-400%, 0%)";
+		sidebar.style.display = "none";
 		document.getElementById("sidebar-open").style.display = "block";
 	}
 }

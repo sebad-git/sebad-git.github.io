@@ -61,7 +61,7 @@ a:hover { color: var(--nav_text-color_hover);  font-size: 4.5vmin; text-shadow: 
 .hero-text p { font-size: 4vmin; }
 
 .sidebar {
-  /*display: none; */
+  display: none;
   transform: translate(-400%, 0%);
   position: fixed;
   width: 20%;

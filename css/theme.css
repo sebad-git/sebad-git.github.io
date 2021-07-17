@@ -62,7 +62,7 @@ a:hover { color: var(--nav_text-color_hover);  font-size: 4.5vmin; text-shadow: 
 
 .sidebar {
   /*display: none; */
-  transform: translate(-00%, 0%);
+  transform: translate(-400%, 0%);
   position: fixed;
   width: 20%;
   height: 100%;

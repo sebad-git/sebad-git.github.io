@@ -17,18 +17,30 @@ function showSidebar(show){
 function translate() {
     try {
         if (navigator.language.includes("es")) { setSpanish(); }
+		else{ setEnglish(); }
     } catch (error) { alert(error); }
 }
 
 function setSpanish() {
     //Hero
-    setTextById('header1', " Hola, Mi nombre es Sebastian");
+    setTextById('header1', "Hola, Mi nombre es Sebastian");
     setTextById('header2', "Y soy desarrollador");
     //Menu
     setTextById('nav1', "Inicio");
     setTextById('nav2', "Competencias");
     setTextById('nav3', "Proyectos");
 	setTextById('nav4', "Sobre Mi");
+}
+
+function setEnglish() {
+    //Hero
+    setTextById('header1', "Hi, I am Sebastian");
+    setTextById('header2', "And I'm a developer");
+    //Menu
+    setTextById('nav1', "Home");
+    setTextById('nav2', "Skills");
+    setTextById('nav3', "Proyects");
+	setTextById('nav4', "About");
 }
 
 function setTextById(tagId, text) {

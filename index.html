@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+<head>
+    <title>Sebastian Denegri</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <script type="text/javascript" src="js/all.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+
+
+<body onload=" translate();">
+
+<div id="sidebar" class="sidebar">
+	<div id="sidebar-close" class="sidebar-close" >
+	 <a onclick="showSidebar(false);"> <i class="fas fa-angle-double-left"></i> </a>
+	</div>
+  <ul>
+  <li><a href="#"><i class="fas fa-home"></i> <span id="nav1"> Home</span> </a></li>
+  <li><a href="news.asp"> <i class="fas fa-brain"></i> <span id="nav2"> Skills</a></span> </li>
+  <li><a href="contact.asp"><i class="fas fa-briefcase"></i> <span id="nav3"> Proyects</span> </a></li>
+  <li><a href="about.asp"><i class="fas fa-info-circle"></i> <span id="nav4"> About</span> </a></li>
+</ul>
+</div>
+  
+<div class="hero-image">
+
+<div id="sidebar-open" class="sidebar-open"> 
+	<a onclick="showSidebar(true);"><i class="fas fa-angle-double-right"></i></a> 
+</div>
+  
+  <div class="hero-text">
+    <h1 id="header1">Hi, I am Sebastian</h1>
+    <p id="header2">And I'm a developer</p>
+  </div>
+  
+</div>
+
 </body>
 </html>

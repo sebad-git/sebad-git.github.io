@@ -1,4 +1,9 @@
 
+function init(){
+	document.getElementById("sidebar").style.transform = "translate(-400%, 0%)";
+	setLanguage();
+}
+
 function showSidebar(show){
 	if(show){
 		var sidebar = document.getElementById("sidebar");
@@ -9,12 +14,13 @@ function showSidebar(show){
 	else{ 
 		const sidebar = document.getElementById("sidebar");
 		sidebar.style.animation = "slide-right 0.5s ease";
-		sidebar.style.transform = "translate(-100%, 0%)";
+		sidebar.style.transform = "translate(-400%, 0%)";
 		document.getElementById("sidebar-open").style.display = "block";
 	}
 }
 
-function translate() {
+
+function setLanguage() {
     try {
         if (navigator.language.includes("es")) { setSpanish(); }
 		else{ setEnglish(); }

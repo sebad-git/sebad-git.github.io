@@ -47,9 +47,22 @@ a:hover { color: var(--nav_text-color_hover);  font-size: 4.5vmin; text-shadow: 
   position: relative;
 }
 
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--hero_text-color);  
+  font-size: 6vmin;
+  text-shadow: 2px 2px var(--hero_text-shadow);
+}
+
+.hero-text p { font-size: 4vmin; }
+
 .sidebar {
   /*display: none; */
-  transform: translate(-100%, 0%);
+  transform: translate(-00%, 0%);
   position: fixed;
   width: 20%;
   height: 100%;
@@ -72,30 +85,11 @@ a:hover { color: var(--nav_text-color_hover);  font-size: 4.5vmin; text-shadow: 
 	animation: float-horizontal 1.5s ease-in-out infinite;
 }
 
-.sidebar-open a {
-	color: var(--hero_text-color);
-	text-shadow: 2px 2px var(--hero_text-shadow);
-	font-size: 6vmin;
-}
-
 .sidebar-close { margin-left:70%; animation: float-horizontal 1.5s ease-in-out infinite; }
 
-.sidebar-close a { color: var(--hero_text-color); font-size: 6vmin; }
+.sidebar-close a, .sidebar-open a { color: var(--hero_text-color); font-size: 6vmin; }
 
 .sidebar-open a:hover, .sidebar-close a:hover { font-size: 6vmin; }
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--hero_text-color);  
-  font-size: 6vmin;
-  text-shadow: 2px 2px var(--hero_text-shadow);
-}
-
-.hero-text p { font-size: 4vmin; }
 
 
 /* Animations */
@@ -123,4 +117,22 @@ a:hover { color: var(--nav_text-color_hover);  font-size: 4.5vmin; text-shadow: 
 	0%{ transform: translateX(0%); }
 	50%{ transform: translateX(10%); }
 	100%{ transform: translateX(0%); }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar { width: 40%; }
+  a { font-size: 4.5vmin; }
+  a:Hover { font-size: 5.5vmin; }
+  .sidebar-close a, .sidebar-open a { color: var(--hero_text-color); font-size: 10vmin; }
+  .sidebar-open a:hover, .sidebar-close a:hover { font-size: 10vmin; }
+  .sidebar-close{ margin-left:60%; }
+  .hero-text p { font-size: 6vmin; }
+  .sidebar li{ margin-bottom: 7vmin; }
+  .hero-image {
+	  height: 100%; width: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+	}
 }

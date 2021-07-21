@@ -25,6 +25,7 @@ body,
 html {
     height: 100% !important;
     margin: 0 !important;
+    columns: var(--h4_color) !important;
     font-family: "Open Sans" !important;
 }
 
@@ -43,14 +44,6 @@ a:hover {
 
 h2 {
     text-transform: uppercase !important;
-}
-
-h4 {
-    color: var(--white) !important;
-}
-
-p {
-    color: var(--white) !important;
 }
 
 button {
@@ -107,6 +100,7 @@ button:hover {
 
 .hero-text p {
     font-size: 4vmin !important;
+    color: var(--hero_text-color) !important;
 }
 
 .pnl-bkgd-1 {
@@ -114,6 +108,12 @@ button:hover {
     color: var(--h4_color) !important;
     background: linear-gradient( var(--gradient), var(--gradient)), url("images/background2.jpg");
     background-attachment: fixed !important;
+}
+
+.pnl-bkgd-1 h2,
+.pnl-bkgd-1 h4,
+.pnl-bkgd-1 p {
+    color: var(--white) !important;
 }
 
 .panel-dark {
@@ -173,6 +173,7 @@ button:hover {
     margin-left: 2.5% !important;
     background: transparent !important;
     padding: 2rem !important;
+    border-bottom: 1px solid var(--pnl-shadow);
 }
 
 .project img {

@@ -185,15 +185,6 @@ button:hover {
     border: 2px solid var(--hero-color2) !important;
 }
 
-.page {
-    width: 15rem !important;
-    height: 24rem !important;
-}
-
-.game {
-    width: 25rem !important;
-    height: 20rem !important;
-}
 
 .project p,
 h3 {
@@ -206,6 +197,30 @@ h3 {
     text-shadow: 1.2px 1.2px var(--shadow) !important;
     font-size: 2.2rem !important;
     text-transform: uppercase !important;
+}
+
+.project iframe{
+    border-radius: 10px !important;
+}
+
+.app {
+    width: 15rem !important;
+    height: 24rem !important;
+}
+
+.desktop {
+    width: 35rem !important;
+    height: 35rem !important;
+}
+
+.page {
+    width: 45rem !important;
+    height: 20rem !important;
+}
+
+.game {
+    width: 25rem !important;
+    height: 20rem !important;
 }
 
 .label {
@@ -222,6 +237,10 @@ h3 {
     color: azure !important;
     font-size: 1.5rem;
     text-decoration: none !important;
+}
+
+.label-java {
+    background-color: #c23f3f !important;
 }
 
 .label-html5 {

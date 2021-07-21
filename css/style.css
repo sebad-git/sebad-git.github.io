@@ -191,11 +191,11 @@ button:hover {
 .project img {
     border-radius: 5px !important;
     border: 2px solid var(--hero-color2) !important;
+    -webkit-filter: drop-shadow(8px 8px 10px gray) !important;
+    filter: drop-shadow(8px 8px 10px gray) !important;
 }
 
-
-.project p,
-h3 {
+.project p,h3 {
     color: var(--font-color-dk) !important;
     font-size: large !important;
 }
@@ -207,11 +207,16 @@ h3 {
     text-transform: uppercase !important;
 }
 
-.project iframe{ border-radius: 10px !important; }
+.project iframe{ 
+    border-radius: 10px !important;
+    -webkit-filter: drop-shadow(8px 8px 10px gray) !important;
+    filter: drop-shadow(8px 8px 10px gray) !important;
+}
 
 .app {
-    width: 15rem !important;
-    height: 24rem !important;
+    width: 18rem !important;
+    height: 28rem !important;
+    margin-left: 15% !important;
 }
 
 .desktop {

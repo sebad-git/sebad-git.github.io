@@ -34,12 +34,22 @@ function setEnglish() {
     //setTextById('about-lbl', "About me");
     setTextById('about-link', "About");
     setTextById('skils-link', "Skills");
-    setTextById('skills-lbl', "Skills");
     setTextById('projects-link', "Proyects");
-    setTextById('projects-lbl', "Projects");
     setTextById('contact-link', "Contact");
-    //Contact
+    //Headers
+    setTextById('skills-lbl', "Skills");
+    setTextById('projects-lbl', "Projects");
     setTextById('contact-lbl', "Contact");
+    //Projects
+    setTextByClass('git','SEE ON GITHUB');
+    setTextByClass('site','SEE SITE');
+    setTextById('app1-ttl', "Android student app where you make map markers with pictures.");
+    setTextById('app2-ttl', " A desktop application made in Java Swing to update your ip address to use your pc as a server with a dynamic dns.");
+    setTextById('app2-lbl2', "* SHA1 password codification.");
+    setTextById('app2-lbl3', "* AES data codification.");
+    setTextById('app2-lbl4', "* Logs and log monitor.");
+    setTextById('app3-ttl', " A website like Netflix with public domain movies made in Angular 9.");
+    //Contact
     setTextById('frm_subject', "Subject");
     setTextById('frm_email', "E-Mail");
     setTextById('frm_content', "Content");
@@ -53,30 +63,40 @@ function setSpanish() {
     //Menu
     setTextById('home-link', "Inicio");
     //setTextById('about-lbl', "Sobre mi");
-    //setTextById('about-link', "Sobre mi");
     setTextById('skils-link', "Competencias");
-    setTextById('skills-lbl', "Competencias");
     setTextById('projects-link', "Proyectos");
-    setTextById('projects-lbl', "Projectos");
     setTextById('contact-link', "Contacto");
-    //Contact
-    setTextById('contact-lbl', "Contacto");
+     //Headers
+     setTextById('skills-lbl', "Competencias");
+     setTextById('projects-lbl', "Projectos");
+     setTextById('contact-lbl', "Contacto");
+     //Projects
+     setTextByClass('git','VER EN GITHUB');
+     setTextByClass('site','VER SITIO');
+     setTextById('app1-ttl', "Android student app where you make map markers with pictures.");
+     setTextById('app2-ttl', "Aplicación de escritorio hecha en Java Swing para actualizar la dirección ip de una para usar tu pc como servidor con dns dinamico.");
+     setTextById('app2-lbl2', "* Codificación SHA1 de password.");
+     setTextById('app2-lbl3', "* Codificación AES de los datos de login.");
+     setTextById('app2-lbl4', "* Logs y monitor de logs.");
+     setTextById('app3-ttl', "Un sitio como Netflix con peliculas de dominio público desarrollada con Angular 9 y Firebase.");
+     //Contact
     setPlaceholderById('frm_subject', "Asunto");
     setPlaceholderById('frm_email', "Correo");
     setPlaceholderById('frm_content', "Contenido");
     setTextById('send-btn', "Enviar");
 }
 
-function setTextById(tagId, text) {
-    try {
-        const element = document.getElementById(tagId);
-        if (element) { element.textContent = text; } else { alert("Tag:[" + element + "] not found"); }
-    } catch (error) { alert(error); }
+function setTextById(elementId, text) {
+    try { $('#'+elementId).text(text); } 
+    catch (error) { alert(error); }
 }
 
-function setPlaceholderById(tagId, text) {
-    try {
-        const element = document.getElementById(tagId);
-        if (element) { element.placeholder = text; } else { alert("Tag:[" + element + "] not found"); }
-    } catch (error) { alert(error); }
+function setPlaceholderById(elementId, text) {
+    try { $('#'+elementId).attr("placeholder", text); }
+    catch (error) { alert(error); }
+}
+
+function setTextByClass(className, text) {
+    try { $('.'+className).text(text); }
+    catch (error) { alert(error); }
 }

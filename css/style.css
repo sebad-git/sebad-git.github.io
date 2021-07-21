@@ -199,9 +199,7 @@ h3 {
     text-transform: uppercase !important;
 }
 
-.project iframe{
-    border-radius: 10px !important;
-}
+.project iframe{ border-radius: 10px !important; }
 
 .app {
     width: 15rem !important;

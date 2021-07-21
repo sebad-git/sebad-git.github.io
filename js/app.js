@@ -1,35 +1,21 @@
-function init() {
-    //document.getElementById("sidebar").style.transform = "translate(-400%, 0%)";
+$(document).ready(function() {
+    smoothScroll();
     setLanguage();
-}
+});
 
-function showSidebar(show) {
-    const sidebar = document.getElementById("sidebar");
-    if (show) {
-        sidebar.style.animation = "slide-left 0.5s ease";
-        sidebar.style.transform = "translate(0%, 0%)";
-        sidebar.style.display = "block";
-        document.getElementById("sidebar-open").style.display = "none";
-    } else {
-        const skillPanel = document.getElementById("skills-pnl");
-        skillPanel.style.animation = "fade-out 1.2s ease";
-        setTimeout(function() { skillPanel.style.display = "none"; }, 1200);
-        sidebar.style.animation = "slide-right 0.5s ease";
-        sidebar.style.transform = "translate(-400%, 0%)";
-        document.getElementById("sidebar-open").style.display = "block";
-        setTimeout(function() { sidebar.style.display = "none"; }, 500);
-    }
-}
+function smoothScroll() {
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
 
-function showSkills() {
-    const skillPanel = document.getElementById("skills-pnl");
-    if (skillPanel.style.display == "none") {
-        skillPanel.style.animation = "fade-in 1.2s ease";
-        skillPanel.style.display = "block";
-    } else {
-        skillPanel.style.animation = "fade-out 1.2s ease";
-        setTimeout(function() { skillPanel.style.display = "none"; }, 1200);
-    }
 }
 
 function setLanguage() {
@@ -44,10 +30,20 @@ function setEnglish() {
     setTextById('header1', "Hi, I am Sebastian");
     setTextById('header2', "And I'm a developer");
     //Menu
-    setTextById('nav1', "Home");
-    setTextById('nav2', "Skills");
-    setTextById('nav3', "Proyects");
-    setTextById('nav4', "About");
+    setTextById('home-link', "Home");
+    //setTextById('about-lbl', "About me");
+    setTextById('about-link', "About");
+    setTextById('skils-link', "Skills");
+    setTextById('skills-lbl', "Skills");
+    setTextById('projects-link', "Proyects");
+    setTextById('projects-lbl', "Projects");
+    setTextById('contact-link', "Contact");
+    //Contact
+    setTextById('contact-lbl', "Contact");
+    setTextById('frm_subject', "Subject");
+    setTextById('frm_email', "E-Mail");
+    setTextById('frm_content', "Content");
+    setTextById('send-btn', "Send");
 }
 
 function setSpanish() {
@@ -55,15 +51,32 @@ function setSpanish() {
     setTextById('header1', "Hola, Mi nombre es Sebastian");
     setTextById('header2', "Y soy desarrollador");
     //Menu
-    setTextById('nav1', "Inicio");
-    setTextById('nav2', "Competencias");
-    setTextById('nav3', "Proyectos");
-    setTextById('nav4', "Sobre mi");
+    setTextById('home-link', "Inicio");
+    //setTextById('about-lbl', "Sobre mi");
+    //setTextById('about-link', "Sobre mi");
+    setTextById('skils-link', "Competencias");
+    setTextById('skills-lbl', "Competencias");
+    setTextById('projects-link', "Proyectos");
+    setTextById('projects-lbl', "Projectos");
+    setTextById('contact-link', "Contacto");
+    //Contact
+    setTextById('contact-lbl', "Contacto");
+    setPlaceholderById('frm_subject', "Asunto");
+    setPlaceholderById('frm_email', "Correo");
+    setPlaceholderById('frm_content', "Contenido");
+    setTextById('send-btn', "Enviar");
 }
 
 function setTextById(tagId, text) {
     try {
-        const tag = document.getElementById(tagId);
-        if (tag) { tag.textContent = text; } else { alert("Tag:[" + tagId + "] not found"); }
+        const element = document.getElementById(tagId);
+        if (element) { element.textContent = text; } else { alert("Tag:[" + element + "] not found"); }
+    } catch (error) { alert(error); }
+}
+
+function setPlaceholderById(tagId, text) {
+    try {
+        const element = document.getElementById(tagId);
+        if (element) { element.placeholder = text; } else { alert("Tag:[" + element + "] not found"); }
     } catch (error) { alert(error); }
 }

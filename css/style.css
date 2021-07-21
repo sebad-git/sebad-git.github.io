@@ -106,7 +106,11 @@ button:hover {
 .pnl-bkgd-1 {
     padding: 5vmin !important;
     color: var(--h4_color) !important;
-    background: linear-gradient( var(--gradient), var(--gradient)), url("images/background2.jpg");
+    background: linear-gradient( var(--gradient), var(--gradient)), url("images/background1.jpg");
+    width: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     background-attachment: fixed !important;
 }
 

@@ -191,8 +191,14 @@ button:hover {
 .project img {
     border-radius: 5px !important;
     border: 2px solid var(--hero-color2) !important;
-    -webkit-filter: drop-shadow(8px 8px 10px gray) !important;
-    filter: drop-shadow(8px 8px 10px gray) !important;
+    -webkit-filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
+    filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
+}
+
+.project iframe{ 
+    border-radius: 10px !important;
+    -webkit-filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
+    filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
 }
 
 .project p,h3 {
@@ -205,12 +211,6 @@ button:hover {
     text-shadow: 1.2px 1.2px var(--shadow) !important;
     font-size: 2.2rem !important;
     text-transform: uppercase !important;
-}
-
-.project iframe{ 
-    border-radius: 10px !important;
-    -webkit-filter: drop-shadow(8px 8px 10px gray) !important;
-    filter: drop-shadow(8px 8px 10px gray) !important;
 }
 
 .app {

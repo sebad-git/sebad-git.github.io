@@ -70,6 +70,14 @@ button:hover {
     text-transform: uppercase !important;
 }
 
+.navbar img {
+    width: 16px !important; height: 16px !important;
+    display: inline-block !important;
+    margin: 0px !important; padding: 0px !important;
+    -webkit-filter: grayscale(90%) !important;
+    filter: grayscale(90%) !important;
+}
+
 .navbar-brand {
     font-size: 1.8rem !important;
     font-family: "Mulish" !important;

@@ -168,13 +168,13 @@ button:hover {
 .project h3{ text-transform: uppercase !important; }
 
 .project img {
-    border-radius: 5px !important;
-    width: 100% !important;
+    border-radius: 5px 5px 0px 0px !important;
+    width: 101% !important;
     height: 10rem !important;
     margin: 0px !important; padding: 0px !important;
 }
 
-.project iframe{ border-radius: 10px !important; }
+.project iframe{ border-radius: 5px 5px 0px 0px !important; }
 
 .label { margin-left: 0.5rem !important; }
 

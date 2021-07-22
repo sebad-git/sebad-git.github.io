@@ -16,7 +16,7 @@
     --nav_text-color_hover: #5986db;
     --container-background: #e7e7e7;
     --button-color: #1b1b1b;
-    --h4_color: #222222fb;
+    --dark-font_color: #222222fb;
     --icon_color: #c9c9c9;
     --pnl-shadow: #2f4a6d75;
     --pnl-shadow-light: #c2c2c275;
@@ -29,7 +29,7 @@ body,
 html {
     height: 100% !important;
     margin: 0 !important;
-    columns: var(--h4_color) !important;
+    columns: var(--dark-font_color) !important;
     font-family: "Open Sans" !important;
 }
 
@@ -154,14 +154,16 @@ button:hover {
 .icon-black { color: #2c2c2b !important; }
 
 .project {
-    background: linear-gradient(45deg, #292929, #0e0e0e) !important;
+    background: linear-gradient(45deg, #ffffff, #a8a8a8, #ffffff) !important;
     margin: 1% !important;
     border-radius: 10px !important;
     padding: 3px !important;
     padding-bottom: 10px !important;
+    -webkit-filter: drop-shadow(8px 8px 10px gray) !important;
+    filter: drop-shadow(8px 8px 10px gray) !important;
 }
 
-.project h3,.project p,.project h5,.project h4,.project a{ color: var(--white) !important; }
+.project h3,.project p,.project h5,.project h4,.project a{ color: var(--dark-font_color) !important; }
 .project h3{ text-transform: uppercase !important; }
 
 .project img {
@@ -169,7 +171,7 @@ button:hover {
     border: 2px solid var(--hero-color2) !important;
     width: 20rem !important;
     height: 10rem !important;
-    box-shadow: 0 1px 2px 0 var(--pnl-shadow-light), 0 0.5px 2.5px 0 var(--pnl-shadow-light) !important;
+    box-shadow: 0 2px 3px 0 var(--pnl-shadow), 0 1px 4px 0 var(--pnl-shadow) !important;
     margin: 0px !important; padding: 0px !important;
 }
 

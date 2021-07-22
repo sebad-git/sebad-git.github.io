@@ -22,6 +22,7 @@
     --pnl-shadow-light: #c2c2c275;
     --white: #ffffff;
     --nav_ham: #1b1b1b;
+    --footer: #1b1b1b;
 }
 
 body,
@@ -214,11 +215,7 @@ button:hover {
 
 .label-angular { background-color: #dd0031 !important; }
 
-.arrow {
-    color: #f2f2f2 !important;
-    font-size: 40px !important;
-    animation: float-vertical 1.5s ease-in-out infinite !important;
-}
+
 
 .separator-sm { margin-top: 2rem !important; }
 
@@ -227,18 +224,16 @@ button:hover {
 .separator-bg { margin-top: 20rem !important; }
 
 .footer {
-    border-radius: 5px 5px 0px 0px !important;
     padding: 10px !important;
-    padding-top: 15px !important;
-    background: #313131 !important;
-    background: linear-gradient(145deg, #4b4b4b 0%, #313131 100%) !important;
+    padding-top: 10px !important;
+    background: var(--footer) !important;
     color: #e4e1e1 !important;
+    padding-bottom: 15px !important;
 }
-
 
 /* Animations */
 
-.fade-in { animation: fade-in 1.2s ease !important; }
+.fade-in { animation: fade-in 2s ease !important; }
 
 .slide-left { animation: slide-left 1s ease; }
 
@@ -249,23 +244,13 @@ button:hover {
 .float-vertical { animation: float-vertical 1.5s ease-in-out infinite; }
 
 @keyframes slide-left {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
 }
 
 @keyframes slide-right {
-    0% {
-        transform: translateX(0%);
-        display: block;
-    }
-    100% {
-        transform: translateX(-100%);
-        display: block;
-    }
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
 }
 
 @keyframes scale {
@@ -299,7 +284,7 @@ button:hover {
 
       .navbar-toggle,.navbar-header button { 
           background: transparent !important;
-          margin-right: 25% !important; padding:0% 2% !important; 
+          margin-right: 10% !important; padding:0% 2% !important; 
           color: var(--nav_text-color) !important;
           border: 2px solid var(--nav_text-color) !important;
           border-radius: 5px !important;

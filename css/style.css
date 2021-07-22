@@ -27,6 +27,7 @@
     --brown: #d1ae92;
     --nav_ham: #1b1b1b;
     --footer: #1b1b1b;
+    --input-shadow: #a1b35270;
 }
 
 body,
@@ -57,6 +58,8 @@ a:hover {
 
 h2 { text-transform: uppercase !important; }
 
+hr{ border: solid 1px var(--hr); }
+
 button {
     background: var(--button-color) !important;
     color: var(--white) !important;
@@ -77,7 +80,15 @@ button:hover {
     transform: scale(1.1);
 }
 
-hr{ border: solid 1px var(--hr); }
+
+input[type=text]:focus, input[type=text]:active,
+input[type=password]:focus,input[type=password]:active, 
+input[type=email]:focus,input[type=email]:active,
+  textarea:active, textarea:focus,textarea:hover {
+    box-shadow: 0 4px 8px 0 var(--input-shadow), 0 3px 10px 0 var(--input-shadow) !important;
+    border: 1.4px var(--input-shadow) solid !important;
+    background-color: transparent !important;
+  }
 
 .navbar {
     background: var(--white) !important;

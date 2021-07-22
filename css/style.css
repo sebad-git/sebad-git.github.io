@@ -217,8 +217,6 @@ button:hover {
 
 .label-angular { background-color: #dd0031 !important; }
 
-
-
 .separator-sm { margin-top: 2rem !important; }
 
 .separator { margin-top: 10rem !important; }
@@ -288,14 +286,13 @@ button:hover {
           background: transparent !important;
           margin-right: 10% !important; padding:0% 2% !important; 
           color: var(--nav_text-color) !important;
-          border: 2px solid var(--nav_text-color) !important;
+          border: none !important;
           border-radius: 5px !important;
-          font-size: 1.4rem !important;
+          font-size: 1.5rem !important;
         }
 
     .navbar-toggle:hover,.navbar-header button:hover, .navbar-toggle:focus,.navbar-header button:focus {
         color: var(--nav_text-color_hover) !important;
-        border: 2px solid var(--nav_text-color_hover) !important;
     }
     
     a { font-size: 1.5rem !important; }

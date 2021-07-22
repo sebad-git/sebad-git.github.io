@@ -43,11 +43,9 @@ function setEnglish() {
     //Projects
     setTextByClass('git','SEE ON GITHUB');
     setTextByClass('site','SEE SITE');
+    setTextByClass('download','DOWNLOAD');    
     setTextById('app1-ttl', "Android student app where you make map markers with pictures.");
     setTextById('app2-ttl', " A desktop application made in Java Swing to update your ip address to use your pc as a server with a dynamic dns.");
-    setTextById('app2-lbl2', "* SHA1 password codification.");
-    setTextById('app2-lbl3', "* AES data codification.");
-    setTextById('app2-lbl4', "* Logs and log monitor.");
     setTextById('app3-ttl', " A website like Netflix with public domain movies made in Angular 9.");
     //Contact
     setTextById('frm_subject', "Subject");
@@ -73,6 +71,7 @@ function setSpanish() {
      //Projects
      setTextByClass('git','VER EN GITHUB');
      setTextByClass('site','VER SITIO');
+     setTextByClass('download','DESCARGAR');
      setTextById('app1-ttl', "Android student app where you make map markers with pictures.");
      setTextById('app2-ttl', "Aplicación de escritorio hecha en Java Swing para actualizar la dirección ip de una para usar tu pc como servidor con dns dinamico.");
      setTextById('app2-lbl2', "* Codificación SHA1 de password.");

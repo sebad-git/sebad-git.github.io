@@ -68,7 +68,7 @@ function setSpanish() {
     setTextById('contact-link', "Contacto");
      //Headers
      setTextById('skills-lbl', "Competencias");
-     setTextById('projects-lbl', "Projectos");
+     setTextById('projects-lbl', "Proyectos");
      setTextById('contact-lbl', "Contacto");
      //Projects
      setTextByClass('git','VER EN GITHUB');

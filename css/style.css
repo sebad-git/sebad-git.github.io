@@ -15,10 +15,13 @@
     --nav_brand-text-color: #7e7d7d;
     --nav_text-color_hover: #5986db;
     --container-background: #e7e7e7;
+    --button-color: #1b1b1b;
     --h4_color: #222222fb;
     --icon_color: #c9c9c9;
     --pnl-shadow: #2f4a6d75;
+    --pnl-shadow-light: #c2c2c275;
     --white: #ffffff;
+    --nav_ham: #1b1b1b;
 }
 
 body,
@@ -42,33 +45,30 @@ a:hover {
     text-shadow: none !important;
 }
 
-h2 {
-    text-transform: uppercase !important;
-}
+h2 { text-transform: uppercase !important; }
 
 button {
-    background: #2163ae !important;
-    color: #ffffff !important;
-    font-size: 1.9rem !important;
+    background: var(--button-color) !important;
+    color: var(--white) !important;
+    font-size: 1.6rem !important;
+    padding-right: 10% !important; padding-left: 10% !important;
+    border-radius: 0px 25px 0px 25px !important;
 }
 
 button:hover {
-    background: #d82158 !important;
-    color: #ffffff !important;
-    font-size: 2.1rem !important;
-    border: solid 1px #ffffff;
+    background: var(--white) !important;
+    color: var(--button-color) !important;
+    border: solid 1px var(--button-color);
 }
 
 .navbar {
-    background: #ffffff !important;
+    background: var(--white) !important;
     box-shadow: none !important;
     border: none !important;
     margin: 0px !important;
 }
 
-.navbar a {
-    text-transform: uppercase !important;
-}
+.navbar a { text-transform: uppercase !important; }
 
 .navbar img {
     width: 16px !important; height: 16px !important;
@@ -86,9 +86,8 @@ button:hover {
 
 .hero-image {
     /* background-image: linear-gradient( var(--gradient), var(--gradient)), url("images/hero1.jpg"); */
-    background-image: url("images/hero.jpg");
-    height: 100% !important;
-    width: 100% !important;
+    background-image: url("images/hero.png");
+    height: 100% !important; width: 100% !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -98,10 +97,7 @@ button:hover {
 
 .hero-text {
     text-align: center !important;
-    position: absolute !important;
-    top: 35% !important;
-    left: 45% !important;
-    transform: translate(-35%, -45%) !important;
+    margin-top: 13% !important;
     color: var(--hero_text-color) !important;
     font-size: 6vmin !important;
 }
@@ -146,97 +142,39 @@ button:hover {
     overflow: hidden;
 }
 
-.icon {
-    font-size: 4rem !important;
-    color: var(--icon_color) !important;
-}
+.icon { font-size: 4rem !important; color: var(--icon_color) !important; }
 
-.icon-red {
-    color: #c23f3f !important;
-}
-
-.icon-blue {
-    color: #3d5fcc !important;
-}
-
-.icon-green {
-    color: #44c594 !important;
-}
-
-.icon-yellow {
-    color: #ccca4d !important;
-}
-
-.icon-purple {
-    color: #c5479b !important;
-}
-
-.icon-orange {
-    color: #eca73f !important;
-}
-
-.icon-black {
-    color: #2c2c2b !important;
-}
+.icon-red { color: #c23f3f !important; }
+.icon-blue { color: #3d5fcc !important; }
+.icon-green { color: #44c594 !important; }
+.icon-yellow { color: #ccca4d !important; }
+.icon-purple { color: #c5479b !important; }
+.icon-orange { color: #eca73f !important; }
+.icon-black { color: #2c2c2b !important; }
 
 .project {
-    margin: 0.8rem !important;
-    width: 95% !important;
-    margin-left: 2.5% !important;
-    background: transparent !important;
-    padding: 2rem !important;
-    border-bottom: 1px solid var(--pnl-shadow);
+    background: linear-gradient(45deg, #292929, #0e0e0e) !important;
+    margin: 1% !important;
+    border-radius: 10px !important;
+    padding: 3px !important;
+    padding-bottom: 10px !important;
 }
+
+.project h3,.project p,.project h5,.project h4,.project a{ color: var(--white) !important; }
+.project h3{ text-transform: uppercase !important; }
 
 .project img {
     border-radius: 5px !important;
     border: 2px solid var(--hero-color2) !important;
-    -webkit-filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
-    filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
+    width: 20rem !important;
+    height: 10rem !important;
+    box-shadow: 0 1px 2px 0 var(--pnl-shadow-light), 0 0.5px 2.5px 0 var(--pnl-shadow-light) !important;
+    margin: 0px !important; padding: 0px !important;
 }
 
-.project iframe{ 
-    border-radius: 10px !important;
-    -webkit-filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
-    filter: drop-shadow(8px 8px 10px gray) opacity(75%) !important;
-}
+.project iframe{ border-radius: 10px !important; }
 
-.project p,h3 {
-    color: var(--font-color-dk) !important;
-    font-size: large !important;
-}
-
-.project h3 {
-    color: var(--hero-color1) !important;
-    text-shadow: 1.2px 1.2px var(--shadow) !important;
-    font-size: 2.2rem !important;
-    text-transform: uppercase !important;
-}
-
-.app {
-    width: 18rem !important;
-    height: 28rem !important;
-    margin-left: 15% !important;
-}
-
-.desktop {
-    width: 32rem !important;
-    height: 32rem !important;
-}
-
-.page {
-    width: 40rem !important;
-    height: 20rem !important;
-}
-
-.game {
-    width: 25rem !important;
-    height: 20rem !important;
-}
-
-.label {
-    margin-left: 0.5rem !important;
-}
+.label { margin-left: 0.5rem !important; }
 
 .label>a {
     color: azure !important;
@@ -250,47 +188,31 @@ button:hover {
     text-decoration: none !important;
 }
 
-.label-java {
-    background-color: #c23f3f !important;
-}
+.label-java { background-color: #c23f3f !important; }
 
-.label-html5 {
-    background-color: #e44d26 !important;
-}
+.label-html5 { background-color: #e44d26 !important; }
 
-.label-firebase {
-    background-color: #f5830f !important;
-}
+.label-firebase { background-color: #f5830f !important; }
 
 .label-javascript {
     background-color: #fdd83c !important;
     color: #333333 !important;
 }
 
-.label-unity {
-    background-color: #333333 !important;
-}
+.label-unity { background-color: #0c0c0c !important; }
 
-.label-lime {
-    background-color: #546825 !important;
-}
+.label-lime { background-color: #546825 !important; }
 
-.label-android {
-    background-color: #5cb85c !important;
-}
+.label-android { background-color: #5cb85c !important; }
 
 .label-rest {
     color: #f2f2f2 !important;
     background-color: #009fc7 !important;
 }
 
-.label-ccs {
-    background-color: #2163ae !important;
-}
+.label-ccs { background-color: #2163ae !important; }
 
-.label-angular {
-    background-color: #dd0031 !important;
-}
+.label-angular { background-color: #dd0031 !important; }
 
 .arrow {
     color: #f2f2f2 !important;
@@ -298,17 +220,11 @@ button:hover {
     animation: float-vertical 1.5s ease-in-out infinite !important;
 }
 
-.separator-sm {
-    margin-top: 2rem !important;
-}
+.separator-sm { margin-top: 2rem !important; }
 
-.separator {
-    margin-top: 10rem !important;
-}
+.separator { margin-top: 10rem !important; }
 
-.separator-bg {
-    margin-top: 20rem !important;
-}
+.separator-bg { margin-top: 20rem !important; }
 
 .footer {
     border-radius: 5px 5px 0px 0px !important;
@@ -322,25 +238,15 @@ button:hover {
 
 /* Animations */
 
-.fade-in {
-    animation: fade-in 1.2s ease !important;
-}
+.fade-in { animation: fade-in 1.2s ease !important; }
 
-.slide-left {
-    animation: slide-left 1s ease;
-}
+.slide-left { animation: slide-left 1s ease; }
 
-.scale {
-    animation: scale 1.5s ease-in-out;
-}
+.scale { animation: scale 1.5s ease-in-out; }
 
-.float-horizontal {
-    animation: float-horizontal 1.5s ease-in-out infinite;
-}
+.float-horizontal { animation: float-horizontal 1.5s ease-in-out infinite; }
 
-.float-vertical {
-    animation: float-vertical 1.5s ease-in-out infinite;
-}
+.float-vertical { animation: float-vertical 1.5s ease-in-out infinite; }
 
 @keyframes slide-left {
     0% {
@@ -363,54 +269,62 @@ button:hover {
 }
 
 @keyframes scale {
-    0% {
-        transform: scale(1)
-    }
-    100% {
-        transform: scale(1.01);
-    }
+    0% { transform: scale(1) }
+    100% { transform: scale(1.01); }
 }
 
 @keyframes float-horizontal {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(10%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(10%); }
+    100% { transform: translateX(0%); }
 }
 
 @keyframes float-vertical {
-    0% {
-        transform: translateY(0%);
-    }
-    50% {
-        transform: translateY(10%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(10%); }
+    100% { transform: translateY(0%); }
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+      .navbar-toggle,.navbar-header button { 
+          background: transparent !important;
+          margin-right: 25% !important; padding:0% 2% !important; 
+          color: var(--nav_text-color) !important;
+          border: 2px solid var(--nav_text-color) !important;
+          border-radius: 5px !important;
+          font-size: 1.4rem !important;
+        }
+
+    .navbar-toggle:hover,.navbar-header button:hover, .navbar-toggle:focus,.navbar-header button:focus {
+        color: var(--nav_text-color_hover) !important;
+        border: 2px solid var(--nav_text-color_hover) !important;
+    }
+    
+    a { font-size: 1.5rem !important; }
+
+    .navbar-brand,.navbar-brand:hover { font-size: 1.2rem !important; }
+      
+    .navbar img { width: 13px !important; height: 13px !important; }
+    
+    .hero-image { margin-left: 2% !important; }
+    
+    .hero-text { margin-top: 60% !important;  margin-right: 5% !important; }
+     
+    .hero-text h1 { font-size: 3rem !important; }
+
+    .pnl-bkgd-1 { padding: 0 !important; }
+
+    .project { width: 60% !important; margin-left:20% !important; margin-bottom: 10% !important; }
+
+}

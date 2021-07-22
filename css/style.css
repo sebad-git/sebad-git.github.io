@@ -202,13 +202,16 @@ hr{ border: solid 1px var(--hr); }
 
 .project h3,.project p,.project h5,.project h4{ color: var(--dark-font_color) !important; }
 .project h3{ text-transform: uppercase !important; }
+.project p{ margin: 5px !important; }
 
 .project a {
      background: var(--button-color) !important; 
      color: var(--white)!important;
      padding: 5px !important;
      border-radius: 5px !important;
+     box-shadow: 0 2px 4px 0 var(--pnl-shadow-dark), 0 1px 5px 0 var(--pnl-shadow-dark) !important;
 }
+
 .project a:hover {
     background: var(--button-color-hover) !important;
     color: var(--button-color)!important;
@@ -254,8 +257,6 @@ hr{ border: solid 1px var(--hr); }
 .label-ccs { background-color: #2163ae !important; }
 
 .label-angular { background-color: #dd0031 !important; }
-
-.separator-sm { margin-top: 2rem !important; }
 
 .separator { margin-top: 10rem !important; }
 

@@ -183,16 +183,16 @@ hr{ border: solid 1px var(--hr); }
     border-radius: 5px 5px 0px 0px !important;
     width: 100% !important;
     height: 10rem !important;
-    -webkit-filter: grayscale(100%) !important;
-    filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(80%) !important;
+    filter: grayscale(80%) !important;
     margin: 0px !important; padding: 0px !important;
 }
 
 .project iframe { 
     border-radius: 5px 5px 0px 0px !important;
     max-width: 100% !important;
-    -webkit-filter: grayscale(100%) !important;
-    filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(80%) !important;
+    filter: grayscale(80%) !important;
 }
 
 .project:hover img, .project:hover iframe {   

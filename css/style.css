@@ -334,7 +334,7 @@ input[type=email]:focus,input[type=email]:active,
 
       .navbar-toggle,.navbar-header button { 
           background: transparent !important;
-          margin-right: 10% !important; padding:0% 2% !important; 
+          margin-right: 10% !important; padding:8px 16px !important; 
           color: var(--nav_text-color) !important;
           border: none !important;
           border-radius: 5px !important;

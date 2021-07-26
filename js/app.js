@@ -78,6 +78,7 @@ function setSpanish() {
      setTextById('app2-lbl3', "* Codificación AES de los datos de login.");
      setTextById('app2-lbl4', "* Logs y monitor de logs.");
      setTextById('app3-ttl', "Un sitio como Netflix con peliculas de dominio público desarrollada con Angular 9 y Firebase.");
+     setTextById('app5-ttl', "Un simple microservicio para manejo de usuarios hecho en node, express, mongoose y mongodb.");
      //Contact
     setPlaceholderById('frm_subject', "Asunto");
     setPlaceholderById('frm_email', "Correo");
